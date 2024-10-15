@@ -1,0 +1,13 @@
+<h1>Frame<h1>
+- Welded Aluminum tubing
+- Cut to shape aluminum or light-weight steel plate for base
+- 10 gallon fuel tank spot, with shielding if possible
+- fire extinguisher mount 
+- lightweight bucket seat (prob get off FB marketplace or find one in scrapyard, TBD)
+- Multi-point harness, at minimum 3 point, if not 5 point
+- Steering wheel, column
+- Axles and rims
+- keep low to the ground and potentially will need a spoiler for dual turbines, or if a certain height is not attainable
+- Some sort of smaller shocks atleast for handling bumps, potential instabilities, etc
+- * Roll cage? *
+- Front splitter
