@@ -71,15 +71,16 @@ Complex Turbine Modifications
 Electronics
 - An integrated controller with either an interface for changing thrust on the steering wheel, like paddles, or connected to a gas pedal
 -- Some sort of touch sensor that drops the turbine(s) to idle thrust, then shutoff, if not interacted with in a certain period of time
---- Will need a way to work around this for idle periods, especially during testing. 
+--- Will need a way to work around this for idle periods, especially during testing.
+---- Use a button or switch
 --- Pedal method would require a sensor and tension to take into account the pressure applied to the pedal. 
 
 -- Could work on custom ECU to replace JetCat ECU-Software and run only my own, TBD
--- This would need to be HEAVILY DOCUMENTED, I am not doing any guessing games about anything in the slightest
--- Integrated screen on the wheel, displaying fuel consumption, rpm, etc
+--- This would need to be HEAVILY DOCUMENTED, I am not doing any guessing games about anything in the slightest
+--- Integrated screen on the wheel, displaying fuel consumption, rpm, etc
 --- Raspberry pi and some sort of screen or simple tablet with a pi like I saw years ago at Zin Tech
 
-- Spedometer?
+- Spedometer
 
 'JetOp' Modifications
 - Need to get displays of values for operation
