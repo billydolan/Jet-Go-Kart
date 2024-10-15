@@ -1,0 +1,147 @@
+Frame
+- Welded Aluminum tubing
+- Cut to shape aluminum or light-weight steel plate for base
+- 10 gallon fuel tank spot, with shielding if possible
+- fire extinguisher mount 
+- lightweight bucket seat (prob get off FB marketplace or find one in scrapyard, TBD)
+- Multi-point harness, at minimum 3 point, if not 5 point
+- Steering wheel, column
+- Axles and rims
+- keep low to the ground and potentially will need a spoiler for dual turbines, or if a certain height is not attainable
+- Some sort of smaller shocks atleast for handling bumps, potential instabilities, etc
+- * Roll cage? *
+- Front splitter
+
+Wheels
+- Disc brakes, all 4 Wheels
+- could potentially use brakes similar to a higher performace bicycle, using mineral oil
+-- Otherwise investigate hydraulics, etc
+- Air holding tires instead of solid rubber most likely -> TBD
+- guards/fenders on the frame to protect the tires
+- Proper brake lines connected to the brake pedal
+
+Personal Equipment
+- Helmet
+- Fire resistant or proof suit/clothing 
+- Some sort of neckbrace, especially for dual turbine build
+- microphone in helmet or earbuds
+
+Fuel
+- Can be changed, but for single operation, 5-10 gallons minimum
+- T-Slot framing to hold the tank in place
+- fuel lines diameter: * Fill in later*
+- Kerosene, with JetCat anti-static oil mix. 
+-- Price per gallon: 
+
+Turbine Mounts
+- Machined Aluminum Mounts
+- Three bolts for each side of a turbine
+- Put a shield behind the driver in form of a steel plate
+- For 2 turbine operation, common electronics config, but seperate fuel tanks and mounts on either side of the driver?
+- 
+
+Turbine
+- Current V1 model would use 1 JetCat P300-Pro with integrated electronics, providing 300N, ~67 lbf at stock
+-- V2 would use twin JetCat P300-Pros
+--- Will need to redesign the app to handle 1 & 2 turbine operational modes
+- JET NETS MUST BE USED
+
+Initial Turbine Modifications
+- Start with modifying the nozzle to work on optomizing base level thrust
+- Weight reduction for the nozzle if possible
+- Create a more optomized Inlet or cowl to improve intake
+-- These could be scoops or similar to cars that directs air into the turbine
+
+Complex Turbine Modifications
+- Afterburner design, testing, and use
+-- Create an afterburner, that can be as efficient as possible (an ironic statement but possible)
+
+- A turbofan adaptation with proper ducting feeding into afterburner for higher oxygenation of the flow -> easier to burn
+-- Component matching calculations and blade design for the current shaft
+-- Manufacturing would be costly
+--- Testing to validate the risk of surge is minimal, in reality needing to be non-existent will be difficult if numerical models are not very fine tuned.
+
+- Combustor Optimization for efficiency and output
+-- Expensive to manufacture
+-- Modeling software even avaliable?
+--- Can do calculations using resources from my combustion classes, canterra and CEA in Matlab (CEAM)
+--- Time consuming and very complex, especially for creating entirely new combustors, no matter the size reduction
+---- Papers avaliable to assist with this, but anything like code will likely not be able to be obtained.
+
+Electronics
+- An integrated controller with either an interface for changing thrust on the steering wheel, like paddles, or connected to a gas pedal
+-- Some sort of touch sensor that drops the turbine(s) to idle thrust, then shutoff, if not interacted with in a certain period of time
+--- Will need a way to work around this for idle periods, especially during testing. 
+--- Pedal method would require a sensor and tension to take into account the pressure applied to the pedal. 
+
+-- Could work on custom ECU to replace JetCat ECU-Software and run only my own, TBD
+-- This would need to be HEAVILY DOCUMENTED, I am not doing any guessing games about anything in the slightest
+-- Integrated screen on the wheel, displaying fuel consumption, rpm, etc
+--- Raspberry pi and some sort of screen or simple tablet with a pi like I saw years ago at Zin Tech
+
+- Spedometer?
+
+'JetOp' Modifications
+- Need to get displays of values for operation
+-- Uni CS Senior-project may solve this, at least at the base level
+
+- Ability to ultilize commands and functions for multiple turbines
+-- Some sort of input based on detecting how many turbines are connected, etc?
+---automatic app behavior changes, will need to find how to properly display each turbine's performance
+-- Can simplify charts to tachometers and bars only, no need for airspeed
+-- Split screen setup with the pi?
+
+Documentation
+- Create this as a markdown document at some point, could add to ReadME with a license for use at own risk, etc
+-- Code will be as is and timeline is whatever I define it as
+
+- Create a Gantt chart or similar that could be integrated into the portfolio, or on the reporistory for the Jet go-kart
+-- Otherwise use a png of an excel gantt chart
+
+- Cite sources and provide background for documentation/calculations, especially for things like cycle analysis, etc
+-- logic behind methods taken, textbooks/sites used, etc
+
+Propulsion resources 
+-- Textbooks, Online examples, videos, etc will need to be listed. 
+
+- Create a flow chart for parts of the projects
+-- Why the selected path, and what the upcoming steps are / what steps have been 
+
+- Project Updates, on a schedule of weekly or monthly?
+-- Hammer out a simple format, can be posted on GitHub and socials
+
+- Social Media documentation through:
+-- Instagram: bdsprojects
+-- Youtube: TBD
+
+Software (Will be added to over time)
+- Visual Studio Code (VS Code)
+-- Python
+-- C++ 
+-- C#
+
+- Arduino IDE
+
+- Visual Studio Community
+-- Compiling:
+--- C++
+--- C#
+
+- MATLAB
+-- Mathworks own MATLAB software & IDE
+
+- SolidWorks 
+-- 3D Modeling 
+-- Decent fidelity simulations
+--- Fluids
+--- Thermal
+--- Stress
+
+- Converge CFD
+-- Flow simulations
+
+- Power BI
+-- Data visualization and or Gantt chart
+
+- Excel 
+-- Potential Gantt chart
