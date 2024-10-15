@@ -1,4 +1,5 @@
 <h1>Frame<h1>
+<p>
 1. Welded Aluminum tubing
 2. Cut to shape aluminum or light-weight steel plate for base
 3. 10 gallon fuel tank spot, with shielding if possible
@@ -11,3 +12,4 @@
 10. Some sort of smaller shocks atleast for handling bumps, potential instabilities, etc
 11. * Roll cage? *
 12. Front splitter
+<p>
