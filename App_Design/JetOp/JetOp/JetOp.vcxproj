@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c2ba2b75-a898-4d1c-ae0d-d24828bc8ad4}</ProjectGuid>
+    <ProjectGuid>{14129c89-a72d-4325-a374-c615efceb3f5}</ProjectGuid>
     <RootNamespace>JetOp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -104,10 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\billy\Repositories\Jet-Go-Kart\App_Design\JetOp\JetOp\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMain</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -127,16 +130,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\imgui-master\imgui-master\backends\imgui_impl_dx11.h" />
-    <ClInclude Include="..\..\..\..\imgui-master\imgui-master\backends\imgui_impl_win32.h" />
-    <ClInclude Include="..\..\..\..\imgui-master\imgui-master\imconfig.h" />
-    <ClInclude Include="..\..\..\..\imgui-master\imgui-master\imgui.h" />
+    <ClCompile Include="imgui.cpp" />
+    <ClCompile Include="imgui_draw.cpp" />
+    <ClCompile Include="imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui_tables.cpp" />
+    <ClCompile Include="imgui_widgets.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\imgui-master\imgui-master\backends\imgui_impl_dx11.cpp" />
-    <ClCompile Include="..\..\..\..\imgui-master\imgui-master\backends\imgui_impl_win32.cpp" />
-    <ClCompile Include="..\..\..\..\imgui-master\imgui-master\imgui.cpp" />
-    <ClCompile Include="..\..\..\..\imgui-master\imgui-master\imgui_draw.cpp" />
+    <ClInclude Include="dependencies\include\imconfig.h" />
+    <ClInclude Include="dependencies\include\imgui.h" />
+    <ClInclude Include="dependencies\include\imgui_impl_dx11.h" />
+    <ClInclude Include="dependencies\include\imgui_impl_win32.h" />
+    <ClInclude Include="dependencies\include\imgui_internal.h" />
+    <ClInclude Include="dependencies\include\imstb_rectpack.h" />
+    <ClInclude Include="dependencies\include\imstb_textedit.h" />
+    <ClInclude Include="dependencies\include\imstb_truetype.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
